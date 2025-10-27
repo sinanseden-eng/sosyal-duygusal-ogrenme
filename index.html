@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>Sosyal Duygusal Öğrenme Alanları</title>
+    <!-- Tailwind CSS CDN'i -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Inter yazı tipini yüklemek için (Tailwind'in varsayılanı) */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Gizli içeriğin yumuşak açılıp kapanması için */
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .accordion-content.open {
+            max-height: 500px; /* İçeriğin sığabileceği bir yükseklik */
+            transition: max-height 0.5s ease-in;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <div class="container mx-auto px-4 py-12">
+        <!-- Ana Başlık -->
+        <h1 class="text-4xl font-bold text-center text-gray-800 mb-10">
+            Sosyal Duygusal Öğrenme Alanları
+        </h1>
+        
+        <!-- İçerik Kartları Alanı -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Kart 1: Öz Farkındalık (Mor) -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105">
+                <div class="p-6 bg-purple-600">
+                    <h2 class="text-2xl font-bold text-white">Öz Farkındalık</h2>
+                </div>
+                <ul class="p-4 space-y-0">
+                    <!-- Unsur 1 -->
+                    <li class="border-b border-gray-200 last:border-b-0">
+                        <button class="accordion-toggle flex justify-between items-center w-full py-4 text-left font-medium text-gray-800">
+                            <span class="flex items-center">
+                                <svg class="w-5 h-5 text-purple-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                Kendini doğru algılama
+                            </span>
+                            <svg class="w-5 h-5 transform transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-4 pt-0 text-sm text-gray-600">
+                                Kişinin kendi duygularını, düşüncelerini, güçlü ve zayıf yanlarını dürüstçe görebilmesi ve değerlendirebilmesidir.
+                            </p>
+                        </div>
+                    </li>
+                    <!-- Unsur 2 -->
+                    <li class="border-b border-gray-200 last:border-b-0">
+                        <button class="accordion-toggle flex justify-between items-center w-full py-4 text-left font-medium text-gray-800">
+                            <span class="flex items-center">
+                                <svg class="w-5 h-5 text-purple-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                Duygularını tanımlayabilme
+                            </span>
+                            <svg class="w-5 h-5 transform transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-4 pt-0 text-sm text-gray-600">
+                                O an ne hissettiğini (öfke, mutluluk, hayal kırıklığı vb.) fark edip doğru bir şekilde isimlendirebilmektir.
+                            </p>
+                        </div>
+                    </li>
+                    <!-- Unsur 3 -->
+                    <li class="border-b border-gray-200 last:border-b-0">
+                        <button class="accordion-toggle flex justify-between items-center w-full py-4 text-left font-medium text-gray-800">
+                            <span class="flex items-center">
+                                <svg class="w-5 h-5 text-purple-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                Güçlü ve zayıf yönlerinin farkında olma
+                            </span>
+                            <svg class="w-5 h-5 transform transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-4 pt-0 text-sm text-gray-600">
+                                Nelerde iyi olduğunu ve hangi konularda gelişime ihtiyaç duyduğunu bilmek, kişisel gelişim için temel bir adımdır.
+                            </p>
+                        </div>
+                    </li>
+                    <!-- Unsur 4 -->
+                    <li class="border-b border-gray-200 last:border-b-0">
+                        <button class="accordion-toggle flex justify-between items-center w-full py-4 text-left font-medium text-gray-800">
+                            <span class="flex items-center">
+                                <svg class="w-5 h-5 text-purple-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                Öz güven
+                            </span>
+                            <svg class="w-5 h-5 transform transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-4 pt-0 text-sm text-gray-600">
+                                Kendi yeteneklerine ve değerine inanma, zorluklar karşısında "yapabilirim" diyebilme hissidir.
+                            </p>
+                        </div>
+                    </li>
+                    <!-- Unsur 5 -->
+                    <li class="border-b border-gray-200 last:border-b-0">
+                        <button class="accordion-toggle flex justify-between items-center w-full py-4 text-left font-medium text-gray-800">
+                            <span class="flex items-center">
+                                <svg class="w-5 h-5 text-purple-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                Motivasyon
+                            </span>
+                            <svg class="w-5 h-5 transform transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-4 pt-0 text-sm text-gray-600">
+                                Bir hedef belirleyip o hedefe ulaşmak için içsel bir istek, arzu ve enerji duyabilmektir.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Kart 2: Öz Yönetim (Turuncu) -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105">
+                <div class="p-6 bg-orange-500">
+                    <h2 class="text-2xl font-bold text-white">Öz Yönetim</h2>
+                </div>
+                <ul class="p-4 space-y-0">
+                    <!-- Unsur 1 -->
+                    <li class="border-b border-gray-200 last:border-b-0">
+                        <button class="accordion-toggle flex justify-between items-center w-full py-4 text-left font-medium text-gray-800">
+                            <span class="flex items-center">
+                                <svg class="w-5 h-5 text-orange-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                Öz Disiplin
+                            </span>
+                            <svg class="w-5 h-5 transform transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-4 pt-0 text-sm text-gray-600">
+                                Hedeflere ulaşmak için anlık dürtüleri kontrol edebilme ve sorumlulukları planlı bir şekilde yerine getirebilme becerisidir.
+                            </p>
+                        </div>
+                    </li>
+                    <!-- Unsur 2 -->
+                    <li class="border-b border-gray-200 last:border-b-0">
+                        <button class="accordion-toggle flex justify-between items-center w-full py-4 text-left font-medium text-gray-800">
+                            <span class="flex items-center">
+                                <svg class="w-5 h-5 text-orange-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                Öfke ve Duygu Kontrolü
+                            </span>
+                            <svg class="w-5 h-5 transform transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-4 pt-0 text-sm text-gray-600">
+                                Güçlü duyguları (özellikle öfke gibi) fark etme ve bunları kendine veya başkalarına zarar vermeden, sağlıklı yollarla ifade edebilmektir.
+                            </p>
+                        </div>
+                    </li>
+                    <!-- Unsur 3 -->
+                    <li class="border-b border-gray-200 last:border-b-0">
+                        <button class="accordion-toggle flex justify-between items-center w-full py-4 text-left font-medium text-gray-800">
+                            <span class="flex items-center">
+                                <svg class="w-5 h-5 text-orange-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                Stres Yönetimi
+                            </span>
+                            <svg class="w-5 h-5 transform transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-4 pt-0 text-sm text-gray-600">
+                                Baskı ve zorlanma anlarında sakin kalabilme, bedensel ve zihinsel tepkileri dengeleyebilme ve yapıcı çözümler bulabilme becerisidir.
+                            </p>
+                        </div>
+                    </li>
+                    <!-- Unsur 4 -->
+                    <li class="border-b border-gray-200 last:border-b-0">
+                        <button class="accordion-toggle flex justify-between items-center w-full py-4 text-left font-medium text-gray-800">
+                            <span class="flex items-center">
+                                <svg class="w-5 h-5 text-orange-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                Eleştirel Düşünme
+                            </span>
+                            <svg class="w-5 h-5 transform transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-4 pt-0 text-sm text-gray-600">
+                                Bilgiyi olduğu gibi kabul etmek yerine onu sorgulama, analiz etme, farklı yönlerini değerlendirme ve mantıklı sonuçlar çıkarma yeteneğidir.
+                            </p>
+                        </div>
+                    </li>
+                    <!-- Unsur 5 -->
+                    <li class="border-b border-gray-200 last:border-b-0">
+                        <button class="accordion-toggle flex justify-between items-center w-full py-4 text-left font-medium text-gray-800">
+                            <span class="flex items-center">
+                                <svg class="w-5 h-5 text-orange-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                Esneklik
+                            </span>
+                            <svg class="w-5 h-5 transform transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-4 pt-0 text-sm text-gray-600">
+                                Planlar değiştiğinde, beklenmedik durumlar ortaya çıktığında veya işler yolunda gitmediğinde duruma uyum sağlayabilme becerisidir.
+                            </p>
+                        </div>
+                    </li>
+                    <!-- Unsur 6 -->
+                    <li class="border-b border-gray-200 last:border-b-0">
+                        <button class="accordion-toggle flex justify-between items-center w-full py-4 text-left font-medium text-gray-800">
+                            <span class="flex items-center">
+                                <svg class="w-5 h-5 text-orange-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                Olumsuz Dış Etkilere Direnç
+                            </span>
+                            <svg class="w-5 h-5 transform transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-4 pt-0 text-sm text-gray-600">
+                                Başkalarının (arkadaş, sosyal medya vb.) olumsuz baskısına veya telkinlerine karşı kendi duruşunu ve değerlerini koruyabilme becerisidir.
+                            </p>
+                        </div>
+                    </li>
+                    <!-- Unsur 7 -->
+                    <li class="border-b border-gray-200 last:border-b-0">
+                        <button class="accordion-toggle flex justify-between items-center w-full py-4 text-left font-medium text-gray-800">
+                            <span class="flex items-center">
+                                <svg class="w-5 h-5 text-orange-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                Yaratıcılık
+                            </span>
+                            <svg class="w-5 h-5 transform transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-4 pt-0 text-sm text-gray-600">
+                                Sorunlara yeni ve farklı çözümler bulma, özgün fikirler üretme ve olaylara farklı bakış açılarıyla yaklaşabilme yeteneğidir.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Kart 3: Sosyal Farkındalık (Yeşil) -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105">
+                <div class="p-6 bg-green-600">
+                    <h2 class="text-2xl font-bold text-white">Sosyal Farkındalık</h2>
+                </div>
+                <ul class="p-4 space-y-0">
+                    <!-- Unsur 1 -->
+                    <li class="border-b border-gray-200 last:border-b-0">
+                        <button class="accordion-toggle flex justify-between items-center w-full py-4 text-left font-medium text-gray-800">
+                            <span class="flex items-center">
+                                <svg class="w-5 h-5 text-green-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                Toplumsal Sorunların Farkında Olma ve Çözüm Üretebilme
+                            </span>
+                            <svg class="w-5 h-5 transform transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-4 pt-0 text-sm text-gray-600">
+                                Çevresindeki (okul, mahalle, dünya) sorunları fark etme ve bu sorunların çözümü için aktif olarak düşünme ve adım atma isteğidir.
+                            </p>
+                        </div>
+                    </li>
+                    <!-- Unsur 2 -->
+                    <li class="border-b border-gray-200 last:border-b-0">
+                        <button class="accordion-toggle flex justify-between items-center w-full py-4 text-left font-medium text-gray-800">
+                            <span class="flex items-center">
+                                <svg class="w-5 h-5 text-green-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                Aileye, Okula ve Topluma Aidiyet
+                            </span>
+                            <svg class="w-5 h-5 transform transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-4 pt-0 text-sm text-gray-600">
+                                Kendini bir grubun (aile, sınıf, toplum) değerli ve kabul edilmiş bir parçası olarak hissetme, o gruba karşı sorumluluk duyma halidir.
+                            </p>
+                        </div>
+                    </li>
+                    <!-- Unsur 3 -->
+                    <li class="border-b border-gray-200 last:border-b-0">
+                        <button class="accordion-toggle flex justify-between items-center w-full py-4 text-left font-medium text-gray-800">
+                            <span class="flex items-center">
+                                <svg class="w-5 h-5 text-green-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                Farklılıklara Saygı
+                            </span>
+                            <svg class="w-5 h-5 transform transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-4 pt-0 text-sm text-gray-600">
+                                İnsanların kültürel, düşünsel, fiziksel veya inançsal farklılıklarını bir zenginlik olarak kabul etme ve hoşgörüyle yaklaşmadır.
+                            </p>
+                        </div>
+                    </li>
+                    <!-- Unsur 4 -->
+                    <li class="border-b border-gray-200 last:border-b-0">
+                        <button class="accordion-toggle flex justify-between items-center w-full py-4 text-left font-medium text-gray-800">
+                            <span class="flex items-center">
+                                <svg class="w-5 h-5 text-green-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                Başkalarına Saygı
+                            </span>
+                            <svg class="w-5 h-5 transform transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-4 pt-0 text-sm text-gray-600">
+                                Diğer insanların haklarına, düşüncelerine, duygularına ve kişisel alanlarına değer verme, nezaketle yaklaşma davranışıdır.
+                            </p>
+                        </div>
+                    </li>
+                    <!-- Unsur 5 -->
+                    <li class="border-b border-gray-200 last:border-b-0">
+                        <button class="accordion-toggle flex justify-between items-center w-full py-4 text-left font-medium text-gray-800">
+                            <span class="flex items-center">
+                                <svg class="w-5 h-5 text-green-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                Değerlere Bağlılık
+                            </span>
+                            <svg class="w-5 h-5 transform transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-4 pt-0 text-sm text-gray-600">
+                                Dürüstlük, adalet, saygı, sorumluluk gibi evrensel ve toplumsal değerleri benimseme ve bu değerleri davranışlarına yansıtmaktır.
+                            </p>
+                        </div>
+                    </li>
+                    <!-- Unsur 6 -->
+                    <li class="border-b border-gray-200 last:border-b-0">
+                        <button class="accordion-toggle flex justify-between items-center w-full py-4 text-left font-medium text-gray-800">
+                            <span class="flex items-center">
+                                <svg class="w-5 h-5 text-green-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                Toplumsal Sorumluluk Projesi yapabilme
+                            </span>
+                            <svg class="w-5 h-5 transform transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-4 pt-0 text-sm text-gray-600">
+                                Sadece kendini değil, toplumu da düşünerek faydalı işler planlama, organize etme ve bu planları uygulama becerisidir.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Kart 4: İlişkisel Beceriler (Mavi) -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105">
+                <div class="p-6 bg-blue-600">
+                    <h2 class="text-2xl font-bold text-white">İlişkisel Beceriler</h2>
+                </div>
+                <ul class="p-4 space-y-0">
+                    <!-- Unsur 1 -->
+                    <li class="border-b border-gray-200 last:border-b-0">
+                        <button class="accordion-toggle flex justify-between items-center w-full py-4 text-left font-medium text-gray-800">
+                            <span class="flex items-center">
+                                <svg class="w-5 h-5 text-blue-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                Etkin Konuşma / Dinleme
+                            </span>
+                            <svg class="w-5 h-5 transform transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-4 pt-0 text-sm text-gray-600">
+                                Kendi düşüncelerini net, açık ve saygılı bir şekilde ifade edebilme; karşısındakini de sadece duymak değil, gerçekten anlamak için dikkatle dinleyebilmedir.
+                            </p>
+                        </div>
+                    </li>
+                    <!-- Unsur 2 -->
+                    <li class="border-b border-gray-200 last:border-b-0">
+                        <button class="accordion-toggle flex justify-between items-center w-full py-4 text-left font-medium text-gray-800">
+                            <span class="flex items-center">
+                                <svg class="w-5 h-5 text-blue-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                Duygudaşlık (Empati)
+                            </span>
+                            <svg class="w-5 h-5 transform transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-4 pt-0 text-sm text-gray-600">
+                                Kendini başkasının yerine koyarak onun duygularını, düşüncelerini ve bakış açısını anlamaya çalışma becerisidir.
+                            </p>
+                        </div>
+                    </li>
+                    <!-- Unsur 3 -->
+                    <li class="border-b border-gray-200 last:border-b-0">
+                        <button class="accordion-toggle flex justify-between items-center w-full py-4 text-left font-medium text-gray-800">
+                            <span class="flex items-center">
+                                <svg class="w-5 h-5 text-blue-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                İlişkileri Oluşturma
+                            </span>
+                            <svg class="w-5 h-5 transform transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-4 pt-0 text-sm text-gray-600">
+                                Yeni insanlarla tanışma, pozitif, sağlıklı ve karşılıklı saygıya dayalı sosyal bağlar kurabilme ve bu bağları sürdürebilme becerisidir.
+                            </p>
+                        </div>
+                    </li>
+                    <!-- Unsur 4 -->
+                    <li class="border-b border-gray-200 last:border-b-0">
+                        <button class="accordion-toggle flex justify-between items-center w-full py-4 text-left font-medium text-gray-800">
+                            <span class="flex items-center">
+                                <svg class="w-5 h-5 text-blue-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                İşbirliği içinde Çalışma
+                            </span>
+                            <svg class="w-5 h-5 transform transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-4 pt-0 text-sm text-gray-600">
+                                Ortak bir amaç için bir grupta başkalarıyla uyum içinde, görev paylaşımı yaparak ve farklı fikirlere açık olarak çalışabilmektir.
+                            </p>
+                        </div>
+                    </li>
+                    <!-- Unsur 5 -->
+                    <li class="border-b border-gray-200 last:border-b-0">
+                        <button class="accordion-toggle flex justify-between items-center w-full py-4 text-left font-medium text-gray-800">
+                            <span class="flex items-center">
+                                <svg class="w-5 h-5 text-blue-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                Çatışma Çözme
+                            </span>
+                            <svg class="w-5 h-5 transform transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-4 pt-0 text-sm text-gray-600">
+                                Anlaşmazlık anlarında sakin kalarak, her iki tarafın da ihtiyaçlarını anlamaya çalışarak adil ve yapıcı çözümler bulabilme becerisidir.
+                            </p>
+                        </div>
+                    </li>
+                    <!-- Unsur 6 -->
+                    <li class="border-b border-gray-200 last:border-b-0">
+                        <button class="accordion-toggle flex justify-between items-center w-full py-4 text-left font-medium text-gray-800">
+                            <span class="flex items-center">
+                                <svg class="w-5 h-5 text-blue-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                Yardım Etme / Yardım İsteme
+                            </span>
+                            <svg class="w-5 h-5 transform transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-4 pt-0 text-sm text-gray-600">
+                                Başkalarına destek olmayı teklif edebilme ve aynı zamanda ihtiyaç duyduğunda çekinmeden, açık bir şekilde destek talep edebilmedir.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Kart 5: Sorumlu Karar Alma (Kırmızı) -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105">
+                <div class="p-6 bg-red-600">
+                    <h2 class="text-2xl font-bold text-white">Sorumlu Karar Alma</h2>
+                </div>
+                <ul class="p-4 space-y-0">
+                    <!-- Unsur 1 -->
+                    <li class="border-b border-gray-200 last:border-b-0">
+                        <button class="accordion-toggle flex justify-between items-center w-full py-4 text-left font-medium text-gray-800">
+                            <span class="flex items-center">
+                                <svg class="w-5 h-5 text-red-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                Etik Değerler
+                            </span>
+                            <svg class="w-5 h-5 transform transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-4 pt-0 text-sm text-gray-600">
+                                Karar alırken dürüstlük, adalet, başkalarına zarar vermeme ve saygı gibi ahlaki ilkeleri gözetme becerisidir.
+                            </p>
+                        </div>
+                    </li>
+                    <!-- Unsur 2 -->
+                    <li class="border-b border-gray-200 last:border-b-0">
+                        <button class="accordion-toggle flex justify-between items-center w-full py-4 text-left font-medium text-gray-800">
+                            <span class="flex items-center">
+                                <svg class="w-5 h-5 text-red-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                Durum Analizi
+                            </span>
+                            <svg class="w-5 h-5 transform transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-4 pt-0 text-sm text-gray-600">
+                                Bir karar vermeden önce durumu tüm yönleriyle (sebepler, olası sonuçlar, seçenekler) objektif olarak değerlendirme becerisidir.
+                            </p>
+                        </div>
+                    </li>
+                    <!-- Unsur 3 -->
+                    <li class="border-b border-gray-200 last:border-b-0">
+                        <button class="accordion-toggle flex justify-between items-center w-full py-4 text-left font-medium text-gray-800">
+                            <span class="flex items-center">
+                                <svg class="w-5 h-5 text-red-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                Hedef Belirleme
+                            </span>
+                            <svg class="w-5 h-5 transform transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-4 pt-0 text-sm text-gray-600">
+                                Ulaşmak istediği sonucu net, ölçülebilir ve gerçekçi olarak tanımlama ve bu sonuca yönelik adımları planlamaktır.
+                            </p>
+                        </div>
+                    </li>
+                    <!-- Unsur 4 -->
+                    <li class="border-b border-gray-200 last:border-b-0">
+                        <button class="accordion-toggle flex justify-between items-center w-full py-4 text-left font-medium text-gray-800">
+                            <span class="flex items-center">
+                                <svg class="w-5 h-5 text-red-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                Problem Çözme
+                            </span>
+                            <svg class="w-5 h-5 transform transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-4 pt-0 text-sm text-gray-600">
+                                Bir sorunla karşılaşıldığında sorunu doğru tanımlama, farklı çözüm yolları üretme, en uygun olanı seçip uygulama ve sonucu değerlendirme becerisidir.
+                            </p>
+                        </div>
+                    </li>
+                    <!-- Unsur 5 -->
+                    <li class="border-b border-gray-200 last:border-b-0">
+                        <button class="accordion-toggle flex justify-between items-center w-full py-4 text-left font-medium text-gray-800">
+                            <span class="flex items-center">
+                                <svg class="w-5 h-5 text-red-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                Kararların Sorumluluğunu Alma
+                            </span>
+                            <svg class="w-5 h-5 transform transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-4 pt-0 text-sm text-gray-600">
+                                Verdiği kararların sonuçlarını (olumlu veya olumsuz) kabul etme, bu sonuçlardan ders çıkarma ve olumsuz sonuçlar için sorumluluk üstlenebilme olgunluğudur.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Tüm akordiyon düğmelerini seç
+            const accordionToggles = document.querySelectorAll('.accordion-toggle');
+
+            accordionToggles.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Tıklanan düğmenin hemen sonrasındaki içerik elementini bul
+                    const content = button.nextElementSibling;
+                    
+                    // İçeriğin 'open' sınıfını aç/kapat
+                    content.classList.toggle('open');
+
+                    // Düğme içindeki ikonu (chevron) bul
+                    const icon = button.querySelector('svg:last-child');
+                    
+                    // İkonun 'rotate-180' sınıfını aç/kapat
+                    icon.classList.toggle('rotate-180');
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
+
